@@ -1,4 +1,4 @@
-module github.com/terraform-ibm-modules/stack-ibm-template
+module github.com/terraform-ibm-modules/stack-ibm-genai
 
 go 1.21
 
