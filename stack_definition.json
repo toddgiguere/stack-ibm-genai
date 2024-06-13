@@ -5,7 +5,7 @@
 			"required": true,
 			"type": "string",
 			"hidden": false,
-			"default": "rag",
+			"default": "genai",
 			"description": "A prefix added to the name of all resources created by this solution. Used to avoid name clashes in the target account when existing this solution multiple times.",
 			"custom_config": {}
 		},
@@ -31,7 +31,7 @@
 			"required": false,
 			"type": "string",
 			"hidden": false,
-			"default": "rag-services",
+			"default": "genai-services",
 			"description": "The name of the resource group that is created by this solution. The actual name is prefixed with the value of the input 'prefix'.  All resources created by this solution are deployed in this resource group.",
 			"custom_config": {}
 		},
