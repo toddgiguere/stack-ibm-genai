@@ -1,8 +1,8 @@
 {
 	"products": [
 		{
-			"label": "Watsonx.ai SaaS with Assistant and Governance",
-			"name": "deploy-arch-ibm-watsonx-ai-saas",
+			"label": "(POC) WatsonX.ai SaaS with Assistant and Governance",
+			"name": "Watson_X_-_Generative_AI",
 			"product_kind": "solution",
 			"tags": [
 				"watson",
