@@ -20,11 +20,12 @@ func TestProjectsFullTest(t *testing.T) {
 		t.Fatal(kerr)
 	}
 	options.StackInputs = map[string]interface{}{
-		"resource_group_name":         options.ResourceGroup,
-		"ibmcloud_api_key":            options.RequiredEnvironmentVars["TF_VAR_ibmcloud_api_key"],
-		"prefix":                      options.Prefix,
-		"signing_key":                 privateKey,
-		"secret_manager_service_plan": "standard",
+		"resource_group_name":          options.ResourceGroup,
+		"ibmcloud_api_key":             options.RequiredEnvironmentVars["TF_VAR_ibmcloud_api_key"],
+		"prefix":                       options.Prefix,
+		"signing_key":                  privateKey,
+		"secret_manager_service_plan":  "trial",
+		"enable_platform_logs_metrics": false,
 	}
 
 	err := options.RunProjectsTest()

@@ -1,54 +1,55 @@
 {
 	"products": [
 		{
-			"label": "Watson X - Generative AI",
-			"name": "Watson_X_-_Generative_AI",
+			"label": "Watsonx.ai SaaS with Assistant and Governance",
+			"name": "deploy-arch-ibm-watsonx-ai-saas",
 			"product_kind": "solution",
 			"tags": [
 				"watson",
-				"converged_infra"
+				"watsonx.ai",
+				"ibm_created"
 			],
 			"keywords": [
 				"watson",
-				"ai",
-				"compliance",
-				"fscloud",
-				"genai",
-				"ibmcloud",
-				"financial services",
 				"watsonx",
-				"llm",
-				"secure",
-				"secret manager",
-				"key protect",
-				"scc"
+				"ai"
 			],
-			"short_description": "Deploys a GenAI Pattern on IBM Cloud, including all underlying IBM Cloud infrastructure.",
-			"long_description": "This deployable architecture provides a comprehensive foundation for trust, observability, security, and regulatory compliance by configuring and deploying various services, including:\n- Configuring IBM Cloud Account: with recommended values meeting the [IBM Cloud Framework for Financial Services](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-about)\n- Deploying Observability Services: for application and platform logging and monitoring\n- Deploying Keys and Secrets Management Services: for storage and management of encryption keys and secrets\n- Deploying a Suite of Watson AI Services: to provide AI capabilities to the application \n\nThese configured and deployed services enable a secure and trustworthy deployment of Generative AI applications on IBM Cloud.\n\n# Objective\n\nThese pipelines facilitate the deployment of the application, vulnerability checks, and auditability, ensuring a secure and trustworthy deployment of Generative AI applications on IBM Cloud.",
-			"offering_docs_url": "https://github.com/terraform-ibm-modules/stack-ibm-genai/blob/main/README.md",
-			"offering_icon_url": "https://globalcatalog.cloud.ibm.com/api/v1/1082e7d2-5e2f-0a11-a3bc-f88a8e1931fc/artifacts/solution.svg",
+			"short_description": "Deploy Watsonx.ai SaaS with Assistant and Governance to automate the deployment and setup of the IBM watsonx platform.",
+			"long_description": "The Watsonx.ai SaaS with Assistant and Governance deployable architecture easily deploys and embeds AI across your business, manages all data sources, and accelerates responsible AI workflows on one platform.",
+			"provider_name": "FinOps Team.",
+			"offering_docs_url": "https://cloud.ibm.com/docs/watsonx-ai-saas-automation?topic=watsonx-ai-saas-automation-overview",
+			"support_details": "This is a proof of concept and no official support is given.",
 			"features": [
 				{
-					"title": "Ensure Observability",
-					"description": "Provides observability by deploying services such as IBM Log Analysis, IBM Monitoring, IBM Activity Tracker, and log retention."
+					"title": "Build with watsonx applications",
+					"description": "watsonx combines the power of watsonx.ai studio for AI with the scale of watsonx.data store, enabling the creation of next-generation AI."
 				},
 				{
-					"title": "Implement Security",
-					"description": "The architecture ensures security by deploying IBM Key Protect and IBM Secrets Manager."
+					"title": "Develop with Watson Studio",
+					"description": "Develop sophisticated machine learning models using Notebooks and code-free tools to infuse AI throughout your business."
 				},
 				{
-					"title": "Achieve Regulatory Compliance",
-					"description": "Ensures regulatory compliance with IBM SCC."
+					"title": "Deliver and build conversational interfaces with watsonx Assistant",
+					"description": "IBM watsonx Assistant lets you build conversational interfaces into any application, device, or channel."
 				},
 				{
-					"title": "Establish Trust",
-					"description": "Ensures trust by configuring the IBM Cloud account to align with compliance settings as defined in the Financial Services framework."
+					"title": "Integrate predictive capabilities with Watson Machine Learning",
+					"description": "Deploy, manage, and integrate machine learning models into your applications and services in as little as one click."
+				},
+				{
+					"title": "Accelerate buisness decisions Watson Discovery",
+					"description": "Watson Discovery adds a cognitive search and content analytics engine to applications."
+				},
+				{
+					"title": "Manage and monitor with watsonx.governance",
+					"description": "IBM watsonx.governance™ helps you direct, manage, and monitor your organization's AI activities."
 				}
 			],
 			"flavors": [
 				{
-					"label": "GenAI Stack",
-					"name": "genai-stack-1234",
+					"label": "Extended with Generative AI Stack",
+					"name": "genai-stack",
+					"index": 50,
 					"licenses": [
 						{
 							"id": "LICENSE",
@@ -185,18 +186,6 @@
 							"default_value": "gen-ai",
 							"description": "A prefix added to the name of all resources created by this solution. Used to avoid name clashes in the target account when existing this solution multiple times.",
 							"required": true
-						},
-						{
-							"key": "signing_key",
-							"type": "password",
-							"description": "The key used to sign the application image built by the CI pipeline deployed in this solution; please refer to the documentation at https://github.com/terraform-ibm-modules/stack-retrieval-augmented-generation/blob/main/README.md for generating the key; if not set, all resources will deploy successfully, but the initial CI pipeline execution will fail at the signing step.",
-							"display_name": "Multiline secure value",
-							"required": false,
-							"custom_config": {
-								"type": "multiline_secure_value",
-								"grouping": "deployment",
-								"original_grouping": "deployment"
-							}
 						},
 						{
 							"key": "region",
