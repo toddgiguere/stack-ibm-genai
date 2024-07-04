@@ -1,8 +1,8 @@
 {
 	"products": [
 		{
-			"label": "Generative AI Stack",
-			"name": "generative_ai_stack",
+			"label": "WatsonX Generative AI",
+			"name": "watsonx_generative_ai",
 			"product_kind": "solution",
 			"tags": [
 				"watson",
@@ -47,9 +47,8 @@
 			],
 			"flavors": [
 				{
-					"label": "Extended with Generative AI Stack",
-					"name": "genai-stack",
-					"index": 50,
+					"label": "Standard",
+					"name": "genai-stack-standard",
 					"licenses": [
 						{
 							"id": "LICENSE",
