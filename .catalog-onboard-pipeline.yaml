@@ -1,12 +1,12 @@
 ---
 apiVersion: v1
 offerings:
-  - name: Watson_X_-_Generative_AI
+  - name: watsonx_generative_ai
     kind: solution
     catalog_id: 7df1e4ca-d54c-4fd0-82ce-3d13247308cd
-    offering_id: d113359a-921d-4474-965a-4e612c4c1bfe
+    offering_id: 30045dc8-ab5b-4fcd-97e6-28d0655809b2
     variations:
-      - name: genai-stack-1234
+      - name: genai-stack-standard
         mark_ready: false
         install_type: fullstack
         format_kind: stack

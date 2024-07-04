@@ -1,0 +1,7 @@
+{
+  "ibmcloud_api_key": $VALIDATION_APIKEY,
+  "prefix": $PREFIX,
+  "resource_group_name": "catalog-validation-genai",
+  "enable_platform_logs_metrics": false,
+  "secret_manager_service_plan": "trial"
+}
