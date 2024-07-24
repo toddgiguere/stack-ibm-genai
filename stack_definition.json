@@ -319,7 +319,9 @@
 				},
 				{
 					"name": "profile_attachments",
-					"value": ["AI ICT Guardrails"]
+					"value": [
+						"AI ICT Guardrails"
+					]
 				},
 				{
 					"name": "scc_en_email_list",
@@ -370,52 +372,48 @@
 		{
 			"inputs": [
 				{
-					"name": "watsonx_admin_api_key",
-					"value": "ref:../../inputs/watsonx_admin_api_key"
-				},
-				{
-					"name": "resource_group_name",
-					"value": "ref:../../members/1%20-%20Account%20Infrastructure%20Base/outputs/workload_resource_group_name"
-				},
-				{
-					"name": "location",
+					"name": "region",
 					"value": "ref:../../inputs/region"
 				},
 				{
-					"name": "resource_prefix",
+					"name": "prefix",
 					"value": "ref:../../inputs/prefix"
 				},
 				{
-					"name": "use_existing_resource_group",
+					"name": "add_atracker_route",
 					"value": true
 				},
 				{
-					"name": "watson_machine_learning_plan",
-					"value": "v2-standard"
+					"name": "existing_kms_instance_name",
+					"value": "ref:../../members/2a%20-%20Security%20Service%20-%20Key%20Management/outputs/key_protect_name"
 				},
 				{
-					"name": "watson_studio_plan",
-					"value": "professional-v1"
+					"name": "existing_kms_resource_group",
+					"value": "ref:../../members/2a%20-%20Security%20Service%20-%20Key%20Management/outputs/resource_group_name"
 				},
 				{
-					"name": "watson_discovery_plan",
-					"value": "plus"
+					"name": "existing_kms_endpoint_type",
+					"value": "private"
 				},
 				{
-					"name": "watsonx_assistant_plan",
-					"value": "plus"
+					"name": "existing_cos_instance_name",
+					"value": "ref:../../members/3%20-%20Security%20Service%20-%20Observability/outputs/cos_instance_name"
 				},
 				{
-					"name": "watsonx_governance_plan",
-					"value": "do not install"
+					"name": "existing_cos_resource_group",
+					"value": "ref:../../members/1%20-%20Account%20Infrastructure%20Base/outputs/observability_resource_group_name"
 				},
 				{
-					"name": "watsonx_project_name",
-					"value": "ref:../../inputs/prefix"
+					"name": "existing_cos_endpoint_type",
+					"value": "private"
+				},
+				{
+					"name": "use_existing_cos_for_vpc_flowlogs",
+					"value": true
 				}
 			],
-			"name": "6 - WatsonX SaaS services",
-			"version_locator": "7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3.a8504fac-eb37-4aa0-a284-f26e876b5750-global"
+			"name": "6 - ROKS Landing Zone",
+			"version_locator": "ec669e77-13bd-4af9-ab52-b66ef515f35d.30bc73e3-601c-496a-8cc6-73df73486d99"
 		}
 	]
 }
